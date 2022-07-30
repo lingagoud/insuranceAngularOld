@@ -1,0 +1,40 @@
+<form (ngSubmit)="login(mail,password)" #loginForm="ngForm">
+  <div class="container">
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="email"
+        name="email"
+        [(ngModel)]="mail"
+        #id="ngModel"
+        placeholder="example@gmail.com"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Password</label>
+      <input
+        type="text"
+        class="form-control"
+        id="pass"
+        name="pass"
+        [(ngModel)]="password"
+        #id="ngModel"
+        placeholder="***********"
+      />
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Log in</button>
+      </div>
+  
+  <div class="footer">
+    <div class="forgetp">
+        <button type="submit" class="btn btn-primary">Forget Password</button>
+    </div>
+    <div class="forgetp">
+        <button type="submit" class="btn btn-primary">Reset Password</button>
+    </div>
+  </div>
+  </div>
+</form>

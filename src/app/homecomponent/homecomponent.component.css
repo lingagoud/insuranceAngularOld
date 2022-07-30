@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 60%;
+    width: auto;
+}
+
+.container-2{
+margin: 0;
+background-color: white;
+border-radius: 2%;
+height: auto;
+width: 50%;
+text-align: center;
+}
+.container-3
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.buy,.renew,.claim,.calc{
+    display: flex;
+    background-color: blue;
+    height: 15%;
+    width:auto;
+    margin-left: 2rem;
+    margin-right:2rem;
+    border-radius: 3%;
+    justify-content: center;
+    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
+}
+
+.calc:hover{
+    box-shadow: 10px 10px 9px 3px rgba(73, 71, 59, 0.9);
+}
+.claim:hover{
+    box-shadow: 10px 10px 9px 3px rgba(73, 71, 59, 0.9);
+}
+.renew:hover{
+    box-shadow: 10px 10px 9px 3px rgba(73, 71, 59, 0.9);
+}
+
+.buy:hover{
+    box-shadow: 10px 10px 9px 3px rgba(73, 71, 59, 0.9);
+}
+a{
+    margin-top: 4.5%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: larger;
+    font-weight: bold;
+}

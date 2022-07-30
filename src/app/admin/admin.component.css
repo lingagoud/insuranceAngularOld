@@ -1,0 +1,12 @@
+h3{
+    background-color: blue;
+    color: white;
+    font-family: 'Edu QLD Beginner', cursive;;
+    text-align: center;
+    border: 5px;
+    border-radius: 5px;
+}
+tbody tr:hover{
+    background-color: darkcyan;
+    color:whitesmoke;
+}

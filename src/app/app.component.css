@@ -1,0 +1,37 @@
+
+.containerBox{
+    display: flex;
+ border: 5px solid black;
+ border-radius: 30px;
+ margin-left: 2%;
+ margin-right: 2%;
+ background-color: whitesmoke;
+}
+@font-face{
+    font-family: 'Edu QLD Beginner', cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600&display=swap');
+}
+img{
+    height: 110px;
+    width: 140px;
+}
+.logo{
+    border-radius: 10px;
+    height: 8%;
+    width: 12%;
+    margin-left: 2%;
+}
+.text{
+    box-shadow: 10px 10px 9px 3px rgba(128,126,117,0.9);
+    border-radius: 10px;
+    text-align: center;
+    background-color: burlywood;
+    border: 2px solid burlywood;
+    width: 40%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+

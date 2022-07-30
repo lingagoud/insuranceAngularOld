@@ -1,0 +1,22 @@
+header{
+    color: white;
+    font-weight: bold;
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+.container{
+    height: 35%;
+    width: 20%;
+    border:3px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.mb-3{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.container-2{
+    margin-left: 15%;
+    margin-right: 15%;
+}

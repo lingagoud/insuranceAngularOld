@@ -1,0 +1,13 @@
+form{
+    color: white;
+}
+.col-12{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+}

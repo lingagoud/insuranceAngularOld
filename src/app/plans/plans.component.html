@@ -1,0 +1,61 @@
+<header>
+    <div class="container" style="background-color:blue;">
+        <h4>Plans</h4>
+    </div>
+</header>
+<form (ngSubmit)="getPlan(plandata)" #plandataForm="ngForm">
+    <div class="container">
+        <p>Choose Your Plan</p>
+    </div>
+    <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="Tpl" id="Tpl" [(ngModel)]="plandata.type" #Tpl="ngModel"   value="Third Party Liability" checked >
+          <label class="form-check-label" for="gridRadios1">
+            Third Party
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="cp" id="cp" [(ngModel)]="plandata.type"  #cp="ngModel" value="Comprehensive">
+          <label class="form-check-label" for="gridRadios2">
+            Comprehensive
+          </label>
+        </div>
+    </div>
+</form>
+<form>
+    <div class="container">
+        <p>Choose Your Period</p>
+    </div>
+    <div class="col-sm-11">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="one"  id="one" [(ngModel)]="plandata.duration"  #one="ngModel" value="1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            One Year
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="two" id="two"  [(ngModel)]="plandata.duration"  #two="ngModel"value="2">
+          <label class="form-check-label" for="gridRadios2">
+            Two Year
+          </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="three"[(ngModel)]="plandata.duration"  #three="ngModel" id="three" value="3">
+            <label class="form-check-label" for="gridRadios2">
+              Three Year
+            </label>
+          </div>
+    </div>
+    <div class="col-12" style="margin-left: 46%;">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+      
+</form>
+<!-- if
+<div>{{plandata.Amount}}</div>
+<div>{{regno}}</div>
+<div>{{email}}</div>
+
+<button class="btn btn-success" (onClick)="addPolicy()" >Make Payment</button> -->
+
+
