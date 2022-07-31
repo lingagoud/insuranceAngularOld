@@ -21,13 +21,10 @@ export class PlansComponent implements OnInit {
   }
   email:string='';
   regno:string='';
-  // temp:Iplan={
-  //   Id:0,
-  //   Type:'',
-  //   Amount:0.00,
-  //   TypeOfVehicle:'',
-  //   Duration:0
-  // }
+  type:string='';
+  duration=0;
+
+  
   constructor(private router:Router,private activateroute:ActivatedRoute, private planService:PlanService) { }
 
   ngOnInit(): void {
@@ -39,9 +36,11 @@ export class PlansComponent implements OnInit {
   }
   getPlan(plan:Iplan){
     this.plandata=plan
-    this.planService.getPlan(this.plandata,this.email,this.regno).subscribe((data:Iplan)=>{this.plandata=data})
+   //this.planService.GetPlan(this.regno,this.plandata).subscribe((data:Iplan)=>{this.temp=data})
+     this.router.navigate(['/Ibuy/vdetails/:email/:regno/:type/:duration', {email: this.email, regno:this.regno, type:this.plandata.type, duration:this.plandata.duration}])  
+  
   }
-
+ 
   // addPolicy(){
   // this.planService.addpolicy(this.plandata,this.email,this.regno).subscribe((data:Iplan)=>{this.plandata=data})
   // }

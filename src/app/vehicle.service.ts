@@ -9,7 +9,7 @@ import { catchError,throwError } from 'rxjs';
   providedIn: 'root'
 })
 export class VehicleService {
-  url:string="http://localhost:30267/user/BuyInsurance/"
+  url:string="http://localhost:30267/api/user/BuyInsurance/"
   httpOptions={headers:new HttpHeaders({'Content-type':'application/json'})}
   constructor(private httpClient:HttpClient) { }
  

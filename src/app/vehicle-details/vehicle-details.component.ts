@@ -34,7 +34,7 @@ export class VehicleDetailsComponent implements OnInit {
   saveVehicle(vehicle:Ivehicle){
     this.vehicledata=vehicle
     this.vehicleservice.addVehicle(this.vehicledata,this.email).subscribe(()=>{
-    this.router.navigate(['/Ibuy/vdetails/:email/:regno', {email: this.email, regno: this.vehicledata.RegistrationNumber}])  
+    this.router.navigate(['/Ibuy/vdetails/:email/:regno', {email: this.email, regno:this.vehicledata.RegistrationNumber}])  
   })
  
   }

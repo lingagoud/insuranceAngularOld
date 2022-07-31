@@ -8,6 +8,7 @@ import { IclaimComponent } from './iclaim/iclaim.component';
 import { IrenewComponent } from './irenew/irenew.component';
 import { LoginComponent } from './login/login.component';
 import { PlansComponent } from './plans/plans.component';
+import { PolicyComponent } from './policy/policy.component';
 import { UserComponent } from './user/user.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
@@ -21,7 +22,8 @@ const routes: Routes = [
 {path:'user/:email',component:UserComponent},
 {path:'admin/:email',component:AdminComponent},
 {path:'Ibuy/vdetails/:email',component:VehicleDetailsComponent},
-{path:'Ibuy/vdetails/:email/:regno',component:PlansComponent}
+{path:'Ibuy/vdetails/:email/:regno',component:PlansComponent},
+{path:'Ibuy/vdetails/:email/:regno/:type/:duration',component:PolicyComponent}
 ];
 
 @NgModule({

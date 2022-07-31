@@ -11,17 +11,21 @@ import { catchError,throwError } from 'rxjs'
 })
 export class PlanService {
 
-  url:string="http://localhost:30267/user/BuyInsurance/"
+  url:string="http://localhost:30267/api/user/BuyInsurance/"
   httpOptions={headers:new HttpHeaders({'Content-type':'application/json'})}
   constructor(private httpClient:HttpClient) { }
  
-   getPlan(plan:Iplan,email:string,regno:string):Observable<Iplan>{
-     return this.httpClient.post<Iplan>(this.url+email+'/'+regno,plan,this.httpOptions).pipe(catchError(this.HandleError))
+   GetPlan(regno:string,type:string,duration:number):Observable<Iplan>{
+    console.log(duration)
+     console.log(regno)
+     console.log(type)
+     return this.httpClient.get<Iplan>(this.url+regno+'/'+type+'/'+duration,this.httpOptions).pipe(catchError(this.HandleError))
    }
-
-   addpolicy(plan:Iplan,email:string,regno:string):Observable<Iplan>{
-    return this.httpClient.post<Iplan>(this.url+'addpolicy/'+email+'/'+regno+'',plan,this.httpOptions).pipe(catchError(this.HandleError))
-  }
+  
+ 
+    addpolicy(plan:Iplan,email:string,regno:string):Observable<Iplan>{
+     return this.httpClient.post<Iplan>(this.url+'addpolicy/'+email+'/'+regno+'',plan,this.httpOptions).pipe(catchError(this.HandleError))
+   }
 
    HandleError(error:HttpErrorResponse){
      let errormessage=''
