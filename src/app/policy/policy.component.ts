@@ -33,10 +33,7 @@ export class PolicyComponent implements OnInit {
      this.regno=String(tregno)
      this.type=String(ttype)
      this.duration=Number(tduration)
-     //console.log(this.email)
-    //  console.log(this.duration)
-    //  console.log(this.regno)
-    //  console.log(this.type)
+    
 
      this.planService.GetPlan(this.regno,this.type,this.duration).subscribe((data:Iplan)=>{this.plandata=data})
      console.log(this.plandata)

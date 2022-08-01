@@ -17,6 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { PlansComponent } from './plans/plans.component';
 import { PolicyComponent } from './policy/policy.component';
+import { RenewplansComponent } from './renewplans/renewplans.component';
+import { RenewpolicyComponent } from './renewpolicy/renewpolicy.component';
+import { IcalcShowComponent } from './icalc-show/icalc-show.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { PolicyComponent } from './policy/policy.component';
     AdminComponent,
     VehicleDetailsComponent,
     PlansComponent,
-    PolicyComponent
+    PolicyComponent,
+    RenewplansComponent,
+    RenewpolicyComponent,
+    IcalcShowComponent
   ],
   imports: [
     BrowserModule,

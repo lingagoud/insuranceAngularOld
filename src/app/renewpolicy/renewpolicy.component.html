@@ -2,7 +2,7 @@
     <div class="container">
         <div class="container-2">
             <p>
-                Vehicle Registration Number:{{regno}}
+                Vehicle Registration Number:{{policyId}}
             </p>
             <p>
                 Plan Type:{{plandata.type}}
@@ -15,15 +15,13 @@
             </p>
             <div class="container-2">
                 <div class="next">
-                    <button class="btn btn-success" type="submit" (click)="addPolicy()" >Make Payment</button>
+                    <div><button class="btn btn-success" type="submit" (click)="addPolicyRenew()" >Make Payment</button></div>
                 </div>
 
                <!-- <div>
                     <button type="button" class="btn btn-primary" [routerLink]="['/Renew/:policyId']">Back</button>
                 //</div>-->
-                
             </div>
-    </div>
-    
-    </div>
-
+            
+</div>
+<!--<div><button type="button" class="btn btn-primary" [routerLink]="['/Renew/:policyId']">Back</button></div>-->
