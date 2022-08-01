@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 40%;
+    border:3px solid black;
+    border-radius: 5%;
+    background-color: cadetblue;
+}
+.container .container-2{
+    margin-top: 2rem;
+    margin-left: 15%;
+    margin-right: 60%;
+    width: 80%;
+    font-family: 'Edu QLD Beginner', cursive;;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
+
+.container .container-3{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 30%;
+    margin-right: 60%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.container .container-3 .next{
+    padding: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+

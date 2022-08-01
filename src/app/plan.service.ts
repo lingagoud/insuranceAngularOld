@@ -13,6 +13,7 @@ export class PlanService {
 
   url:string="http://localhost:30267/api/user/BuyInsurance/"
   urlrenew:string="http://localhost:30267/api/user/RenewInsurance/"
+  urlcalc:string="http://localhost:30267/api/user/Calc/"
   httpOptions={headers:new HttpHeaders({'Content-type':'application/json'})}
   constructor(private httpClient:HttpClient) { }
  
@@ -35,7 +36,7 @@ export class PlanService {
   }
 
   GetPlanCalc(typeofvehicle:string,type:string,duration:number):Observable<Iplan>{
-    return this.httpClient.get<Iplan>(this.url+typeofvehicle+'/'+type+'/'+duration,this.httpOptions).pipe(catchError(this.HandleError))
+    return this.httpClient.get<Iplan>(this.urlcalc+typeofvehicle+'/'+type+'/'+duration,this.httpOptions).pipe(catchError(this.HandleError))
   }
    HandleError(error:HttpErrorResponse){
      let errormessage=''

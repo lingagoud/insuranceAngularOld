@@ -3,7 +3,7 @@
         <h4>Estimate Premium</h4>
     </div>
 </header>
-<form  (ngSubmit)="getPlanCalc(plandata)" #plandataForm="ngForm">
+<form >
     <div class="container">
         <p>Choose Vehicle Type</p>
     </div>
@@ -66,9 +66,9 @@
           </div>
     </div>
     <div class="mb-3" style="margin-top: 0.5rem;">
-        <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age Of Vehicle"  [(ngModel)]="Age" #age="ngModel" [value]=0>
+        <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age Of Vehicle"  [(ngModel)]="Age" #age="ngModel">
       </div>
     <div class="col-12" style="margin-left:50%;">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" (click)="getPlanCalc(plandata)">Submit</button>
       </div>
 </form>
